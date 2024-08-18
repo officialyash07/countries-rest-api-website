@@ -1,0 +1,29 @@
+:root {
+    --dark-mode-elements: hsl(209, 23%, 22%);
+    --dark-mode-background: hsl(207, 26%, 17%);
+    --dark-mode-text: hsl(0, 0%, 100%);
+    --dark-mode-input: hsl(0, 0%, 100%);
+    --light-mode-elements: hsl(0, 0%, 100%);
+    --light-mode-background: hsl(0, 0%, 98%);
+    --light-mode-text: hsl(200, 15%, 8%);
+    --light-mode-input: hsl(0, 0%, 52%);
+}
+
+#rootPage {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.dark {
+    background-color: var(--dark-mode-background);
+    color: var(--dark-mode-text);
+}
+
+.light {
+    background-color: var(--light-mode-background);
+    color: var(--light-mode-text);
+}
+
+#rootPage main {
+    padding: 2rem 4rem;
+}

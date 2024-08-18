@@ -1,0 +1,134 @@
+:root {
+    --dark-mode-elements: hsl(209, 23%, 22%);
+    --dark-mode-background: hsl(207, 26%, 17%);
+    --dark-mode-text: hsl(0, 0%, 100%);
+    --dark-mode-input: hsl(0, 0%, 100%);
+    --light-mode-elements: hsl(0, 0%, 100%);
+    --light-mode-background: hsl(0, 0%, 98%);
+    --light-mode-text: hsl(200, 15%, 8%);
+    --light-mode-input: hsl(0, 0%, 52%);
+}
+
+.detailsContainer {
+    height: 70vh;
+}
+
+.backBtn a {
+    text-decoration: none;
+}
+
+.backBtn button {
+    margin-block-start: 4rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dark .backBtn button {
+    color: var(--dark-mode-input);
+    background-color: var(--dark-mode-elements);
+}
+
+.light .backBtn button {
+    color: var(--light-mode-text);
+    background-color: var(--light-mode-elements);
+}
+
+.backBtn button svg {
+    width: 20px;
+}
+
+.dark .backBtn button svg path {
+    fill: var(--dark-mode-input);
+}
+
+.light .backBtn button svg path {
+    fill: var(--light-mode-text);
+}
+
+.backBtn button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.content {
+    width: 100%;
+    margin-block-start: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.imgContainer {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer img {
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 30px;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-block-end: 1rem;
+}
+
+.detail {
+    display: flex;
+    gap: 2rem;
+}
+
+.detail > div {
+    flex: 1;
+}
+
+.detail p {
+    padding-block: 5px;
+    font-weight: 700;
+}
+
+.detail span {
+    font-weight: 100;
+}
+
+.bdrCountries {
+    margin-block-start: 3rem;
+}
+
+.bdrCountries p {
+    font-weight: 500;
+}
+
+.bdrCountries button {
+    margin-inline-start: 1rem;
+    margin-block: 0.5rem;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dark .bdrCountries button {
+    color: var(--dark-mode-input);
+    background-color: var(--dark-mode-elements);
+}
+
+.light .bdrCountries button {
+    color: var(--light-mode-input);
+    background-color: var(--light-mode-elements);
+}

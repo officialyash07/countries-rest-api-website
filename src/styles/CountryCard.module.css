@@ -1,0 +1,59 @@
+:root {
+    --dark-mode-elements: hsl(209, 23%, 22%);
+    --dark-mode-background: hsl(207, 26%, 17%);
+    --dark-mode-text: hsl(0, 0%, 100%);
+    --dark-mode-input: hsl(0, 0%, 100%);
+    --light-mode-elements: hsl(0, 0%, 100%);
+    --light-mode-background: hsl(0, 0%, 98%);
+    --light-mode-text: hsl(200, 15%, 8%);
+    --light-mode-input: hsl(0, 0%, 52%);
+}
+
+.countryCard {
+    width: fit-content;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.dark {
+    background-color: var(--dark-mode-elements);
+}
+
+.light {
+    background-color: var(--light-mode-elements);
+}
+
+.flag img {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 400px;
+    height: 160px;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content h3 {
+    font-size: 1.1rem;
+    margin-block-end: 15px;
+    font-weight: 900;
+}
+
+.content p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-block-end: 5px;
+}
+
+.content span {
+    font-weight: 400;
+}
+
+.dark .content span {
+    color: #adadad;
+}
+
+.light .content span {
+    color: #494949;
+}

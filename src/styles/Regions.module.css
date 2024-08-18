@@ -1,0 +1,119 @@
+:root {
+    --dark-mode-elements: hsl(209, 23%, 22%);
+    --dark-mode-background: hsl(207, 26%, 17%);
+    --dark-mode-text: hsl(0, 0%, 100%);
+    --dark-mode-input: hsl(0, 0%, 100%);
+    --light-mode-elements: hsl(0, 0%, 100%);
+    --light-mode-background: hsl(0, 0%, 98%);
+    --light-mode-text: hsl(200, 15%, 8%);
+    --light-mode-input: hsl(0, 0%, 52%);
+}
+
+.regionContainer {
+    width: fit-content;
+    position: relative;
+}
+
+.regionContainer select {
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.regionContainer select option {
+    padding-block-start: 1rem;
+}
+
+.selects {
+    width: 179px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.dark {
+    background-color: var(--dark-mode-elements);
+}
+
+.light {
+    background-color: var(--light-mode-elements);
+}
+
+.selects p {
+    text-transform: capitalize;
+}
+
+.selects svg {
+    width: 12px;
+    aspect-ratio: 1;
+    margin-block-start: 4px;
+}
+
+.light svg path {
+    fill: var(--light-mode-text);
+}
+
+.dark svg path {
+    fill: var(--dark-mode-text);
+}
+
+.options {
+    padding: 0.5rem 1rem;
+    padding-inline: 0;
+    margin-block-start: 5px;
+    border-radius: 4px;
+    position: absolute;
+    width: 179px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.darkOptions {
+    background-color: var(--dark-mode-elements);
+}
+
+.lightOptions {
+    background-color: var(--light-mode-elements);
+}
+
+.open {
+    display: block;
+    animation: displayMenu;
+    animation-duration: 0.5s;
+}
+
+.close {
+    display: none;
+}
+
+.options p {
+    margin-block: 4px;
+    padding-block: 4px;
+    cursor: pointer;
+    text-indent: 1rem;
+    font-size: 0.9rem;
+}
+
+.darkOptions p:hover {
+    background-color: hsl(208, 26%, 26%);
+}
+
+.lightOptions p:hover {
+    background-color: hsl(0, 0%, 83%);
+}
+
+@keyframes displayMenu {
+    from {
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

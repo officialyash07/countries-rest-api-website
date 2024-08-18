@@ -1,0 +1,55 @@
+:root {
+    --dark-mode-elements: hsl(209, 23%, 22%);
+    --dark-mode-background: hsl(207, 26%, 17%);
+    --dark-mode-text: hsl(0, 0%, 100%);
+    --dark-mode-input: hsl(0, 0%, 100%);
+    --light-mode-elements: hsl(0, 0%, 100%);
+    --light-mode-background: hsl(0, 0%, 98%);
+    --light-mode-text: hsl(200, 15%, 8%);
+    --light-mode-input: hsl(0, 0%, 52%);
+}
+
+.countryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5rem;
+}
+
+.loading {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: salmon;
+}
+
+.loading span {
+    overflow: hidden;
+    animation: loader 5s infinite;
+}
+
+.error {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: salmon;
+}
+
+.error span {
+    overflow: hidden;
+    animation: loader 5s infinite;
+}
+
+@keyframes loader {
+    from {
+        width: 1px;
+    }
+    to {
+        width: 25px;
+    }
+}

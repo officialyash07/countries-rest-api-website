@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --dark-mode-elements: hsl(209, 23%, 22%);
+    --dark-mode-background: hsl(207, 26%, 17%);
+    --dark-mode-text: hsl(0, 0%, 100%);
+    --dark-mode-input: hsl(0, 0%, 100%);
+    --light-mode-elements: hsl(0, 0%, 100%);
+    --light-mode-background: hsl(0, 0%, 98%);
+    --light-mode-text: hsl(200, 15%, 8%);
+    --light-mode-input: hsl(0, 0%, 52%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset default Margin and Padding */
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default body styles */
+
+body {
+    line-height: 1.5;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Images Setup */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Form Element Setup */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Reset list style to none */
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+/* Reset lists padding */
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+/* Reset list markers */
+
+article ol,
+article ul {
+    list-style-position: inside;
+}
+
+/* Reset Cursor for Elements */
+
+label,
+button,
+select,
+summary,
+[type='radio'],
+[type='submit'],
+[type='checkbox'] {
+    cursor: pointer;
+}
